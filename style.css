@@ -1,3 +1,7 @@
-h1 {
+.title {
     color: red;
+}
+.title:hover{
+    color: blue;
+    transform: scale(1.3);
 }
