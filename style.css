@@ -1,7 +1,47 @@
-.title {
-    color: red;
+body {
+    margin: 50px;
 }
-.title:hover{
-    color: blue;
-    transform: scale(1.3);
+.container {
+    display: flex;
+}
+.box {
+    background-color: beige;
+    transition: 1s;
+    width: 150px;
+    height: 150px;
+    transform: rotate(0deg);
+    border-radius: 20px;
+}
+.box:hover {
+    background-color: orange;
+    transform: scale(1.3) rotate(45deg);
+    border-radius: 40px;
+}
+
+.box2 {
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+    border-radius: 20px;
+    transition: 1s;
+}
+.box2:hover {
+    border-radius: 100%;
+    background-color: darkcyan;
+}
+.box3 {
+    margin-left: 20px;
+    background-color: greenyellow;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: relative;
+    left: 0px;
+
+}
+.box3:hover {
+    left: 40px;
+    border-radius: 20px;
 }
